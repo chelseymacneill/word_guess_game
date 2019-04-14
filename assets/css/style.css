@@ -1,21 +1,34 @@
 
 body {
     background-color: #eee;
-    font-family: Courier New, Courier, monospace;
-    text-shadow: 0 0 2px black, -1px -1px 2px black, 1px 0 2px black, 1px 1px 2px black;
+    /* Appyling Font families via Google Fonts*/
+    font-family: "Roboto Condensed", sans-serif;
     text-align: center;
-    width: 100%;
-    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/02/19/260332/efe8948825d5531f7c158b7a6f8d3ecc.jpg");
-    background-size: contain;
+    /* Not really sure what this is doing so commenting it out*/
+    /*background-size: contain;*/
     background-repeat: no-repeat;
+    width: 100%;
 }
 
+.jumbotron {
+    background-size: cover;
+    padding:0;
+  }
+ 
+.container { padding:0;
+             margin:0;
+             width:100%;
+
+}
 
 h1,h2,h3,
 h4,h5,h6 {
     padding: 5px;
-    background-color: rgba(101,155,242,.2);
+    /* Appyling Font families via Google Fonts*/
+    font-family: "Roboto Condensed", sans-serif;
 }
+
+
 #title, #gameover-image, #youwin-image{ 
     display: block;
     margin: 0 auto;
@@ -25,14 +38,13 @@ h4,h5,h6 {
     letter-spacing: 10px;
 }
 
+/* Set the default image to not display*/
+
 #pressKeyTryAgain, 
 #gameover-image, 
 #youwin-image { display: none;}
-.gameplay-column {
-    padding-top: 20px;
-    border: 3px dashed #fff;
-    text-align: center;
-    margin-top: 20px;
-    min-height: 500px;
-    background-color: rgba(255, 255, 255, .3);
+
+/* Borders around the different game pieces*/
+#guessedLetters { border-style: bold;
+
 }
